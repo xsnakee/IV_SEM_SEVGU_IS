@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <conio.h>
+
+int **randomFill(int ** arr, size_t nRow, size_t nCol){
+
+	for (size_t i = 0; i < nRow; ++i)
+		for(size_t j = 0; j < nCol; ++j){
+			arr[i][j] = rand() % 999;
+		}
+
+	return arr;
+}
+
+void randomFill(int ** arr, size_t nRow, size_t nCol){
+
+	for (size_t i = 0; i < nRow; ++i){
+		for(size_t j = 0; j < nCol; ++j){
+			printf("%-3.d ", arr[i][j]);
+		}
+		putch('\n');
+	}
+	return arr;
+}
+
+int main(){
+
+size_t nRow = 0, nCol = 0;
+
+printf("Введите размерность массива \n");
+printf("Количество строк: ");
+scanf("%d", &nRow);
+printf("Количество столбцов: ");
+scanf(""%d", &nCol");
+
+int **arr = (int**) calloc(sizeof(int)*nRow);
+
+for (size_t i = 0; i < nCol; ++i){
+	arr[i] = (int*) calloc(sizeof(int)*nCol);
+
+}
+
+return 0;
+}

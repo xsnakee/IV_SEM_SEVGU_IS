@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+
+
+int main(){
+
+size_t nRow = 0, nCol = 0;
+
+printf("Введите размерность массива \n");
+printf("Количество строк: ");
+scanf("%d", &nRow);
+printf("Количество столбцов: ");
+scanf(""%d", &nRow");
+printf("");
+scanf("");
+
+return 0;
+}
