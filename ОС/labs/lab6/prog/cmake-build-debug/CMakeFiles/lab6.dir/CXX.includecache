@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Labs/OS/lab6/main.cpp
+iostream
+-
+iomanip
+-
+memory
+-
+vector
+-
+list
+-
+conio.h
+-
+
