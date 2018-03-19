@@ -6,7 +6,7 @@
 #include <conio.h>
 
 typedef std::vector<size_t> vectValue;
-typedef std::vector<std::vector<size_t>> matrix;
+typedef std::vector<std::vector<size_t> > matrix;
 
 void matrixRandomFill(matrix &matrix,size_t maxValue){
     for(size_t i = 0; i < matrix.size(); ++i){
