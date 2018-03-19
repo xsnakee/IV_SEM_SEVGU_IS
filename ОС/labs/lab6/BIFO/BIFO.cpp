@@ -66,15 +66,15 @@ bool FIFO(vectValue &vect, size_t processNUm, matrix &REF, size_t colNum, size_t
 	bool Fresult = false;
 
 	if (!isExist(vect, REF[processNUm][colNum], indexOfFirst, indexOfLast)) {
-		size_t tempIndex = (indexOfFirst + temp[processNUm]++) ;
-		//tempIndex = (tempIndex >= vect.size()) ? (vect.size()-1) : tempIndex;
+		size_t tempIndex = (indexOfFirst + temp[processNUm]++);
+		size_t tempValue = vect[tempIndex];
 		vect[tempIndex] = REF[processNUm][colNum];
 
-		if (temp[processNUm] == (indexOfLast - indexOfFirst)) {//(indexOfLast - indexOfFirst)) {
+		if (temp[processNUm] == (indexOfLast - indexOfFirst)) {
 			tempResult[processNUm] = true;
 			temp[processNUm] = 0;
 		}
-		if (tempResult[processNUm]) {
+		if ((tempResult[processNUm]) && (tempValue != 0)) {
 			Fresult = true;
 		}
 	}
@@ -83,9 +83,11 @@ bool FIFO(vectValue &vect, size_t processNUm, matrix &REF, size_t colNum, size_t
 	std::cout << REF[processNUm][colNum] << std::endl;
 	printVector(vect, indexOfFirst, indexOfLast);
 
+	if (Fresult)std::cout << std::setw(4) << "F";
 	std::cout << std::endl;
 
-	return Fresult;;
+
+	return Fresult;
 }
 
 
@@ -160,6 +162,6 @@ int main() {
 
 	size_t F2 = tryBIFO(BIFO_ARR, BIFO_REF, processesAmount, taskDiv);
 	std::cout << "Amount of breaks BIFO: " << F2 << std::endl;
-
+	_getch();
 	return 0;
 }

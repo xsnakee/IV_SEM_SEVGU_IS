@@ -105,5 +105,6 @@ int main() {
 	std::cout << "Amount of breaks FIFO: " << F1 << std::endl;
 	//*/
 
+	_getch();
 	return 0;
 }
