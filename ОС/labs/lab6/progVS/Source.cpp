@@ -54,27 +54,27 @@ void printVector(vectValue &vect, size_t firstIndex, size_t lastIndex) {
 	}
 }
 
-bool FIFO(vectValue &vect, size_t proccesNUm, matrix &REF, size_t colNum, size_t indexOfFirst, size_t indexOfLast) {
+bool FIFO(vectValue &vect, size_t processNUm, matrix &REF, size_t colNum, size_t indexOfFirst, size_t indexOfLast) {
 	static std::vector<size_t> temp(REF.size());
 	static std::vector<bool> tempResult(REF.size());
-	
+	std::cout << "task" << processNUm + 1 << std::endl;
 	bool Fresult = false;
 
-		if (!isExist(vect, REF[proccesNUm][colNum], indexOfFirst, indexOfLast)) {
-			size_t tempIndex = indexOfFirst + temp[proccesNUm]++;
-			vect[tempIndex] = REF[proccesNUm][colNum];
+		if (!isExist(vect, REF[processNUm][colNum], indexOfFirst, indexOfLast)) {
+			size_t tempIndex = indexOfFirst + temp[processNUm]++;
+			vect[tempIndex] = REF[processNUm][colNum];
 
-			if (temp[proccesNUm] == (indexOfLast - indexOfFirst)) {
-				tempResult[proccesNUm] = true;
-				temp[proccesNUm] = 0;
+			if (temp[processNUm] == (indexOfLast - indexOfFirst) || (temp[processNUm] == vect.size())){//(indexOfLast - indexOfFirst)) {
+				tempResult[processNUm] = true;
+				temp[processNUm] = 0;
 			}
-			if (tempResult[proccesNUm]) {
+			if (tempResult[processNUm]) {
 				Fresult = true;
 			}
 		}
 	
 
-		std::cout << REF[proccesNUm][colNum] << std::endl;
+		std::cout << REF[processNUm][colNum] << std::endl;
 		printVector(vect, indexOfFirst, indexOfLast);
 
 		std::cout << std::endl;
@@ -130,7 +130,7 @@ size_t tryBIFO(vectValue &vect, matrix &REF, size_t taskAmount, vectValue taskDi
 		std::cout << std::setw(5) << "T = " << (k + 1) << std::endl;
 
 		for (size_t i = 1; i <= taskAmount; ++i) {
-			Fcounter += FIFO(vect, i, REF, k, taskDiv[i - 1], taskDiv[i]);
+			Fcounter += FIFO(vect, i-1, REF, k, taskDiv[i - 1], taskDiv[i]);
 		}
 		_getch();
 	}
@@ -140,7 +140,7 @@ size_t tryBIFO(vectValue &vect, matrix &REF, size_t taskAmount, vectValue taskDi
 }
 
 int main() {
-	size_t operAmount, V, maxRefValue;
+	//size_t operAmount = 0, V = 0, maxRefValue = 0;
 
 	/*
 	std::cout << "Enter RAM volume: ";
@@ -159,7 +159,8 @@ int main() {
 	std::cout << "Amount of breaks FIFO: " << F1 << std::endl;
 	*/
 
-	size_t processesAmount = 1;
+	size_t operAmount = 0, V = 0, maxRefValue = 0;
+	size_t processesAmount = 0;
 	std::cout << "Enter RAM volume: ";
 	std::cin >> V;
 	std::cout << "Enter  maxRefValue: ";
@@ -169,14 +170,14 @@ int main() {
 	std::cout << "Enter operation amount: ";
 	std::cin >> operAmount;
 
-	vectValue taskDiv(processesAmount + 2);
-	for (size_t i = 1; i < (taskDiv.size() - 1); ++i) {
+	vectValue taskDiv(processesAmount + 1);
+	for (size_t i = 1; i < (processesAmount); ++i) {
 		std::cout << "Enter pages amount for " << (i) << " process:";
 		size_t task = 2;
 		std::cin >> task;
 		taskDiv[i] = taskDiv[i - 1] + task;
 	}
-	taskDiv[taskDiv.size()-1] = V;
+	taskDiv[processesAmount] = V-1;
 
 	vectValue BIFO_ARR(V);
 
