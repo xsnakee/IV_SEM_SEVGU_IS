@@ -6,37 +6,28 @@
 	<title>SQL labs</title>
 </head>
 <body>
-	
-<?php
-$hostName = "localhost";
-$userName = "root";
-$userPassword = "";
 
-$connectionID = mysql_connect($hostName,$userName,$userPassword) OR DIE ('ERROR');
-
-$dbName = 'firm_info_db';
-$connectionID = 0;
-
-mysql_select_db($dbName);
-
-$tableName = 'placement';
-
-$queryresult = mysql_query("SELECT * FROM $tableName");
-
-ECHO "<table class='SQL_SELECT_TABLE'>";
-ECHO "<tr><th>ID фирмы</th><th>Адрес</th><th>Площадь</th><th>Тип площади</th></tr>";
-
-while ($row = mysql_fetch_array($queryresult)){
-ECHO "
-<tr><td>".$row['firm_id']."</td><td>".$row['adress']."</td><td>".$row['square']."</td><td>".$row['type_placement']."</td></tr>";
-}
-
-ECHO "</table>";
-
-mysql_close();
+<?php 
+include 'viewDB.php'
+ ?>
 
 
-?>
+<form id="send_form" method="post" action="editDB.php">
+	<input type="text" name='adress_field' placeholder="Enter adress">
+	<input type="text" name='firm_id_field' placeholder="Enter firm_id">
+	<input type="text" name='square_field' placeholder="Enter square">
+	<select name="type_placement_field">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	<input type="submit" name="add" value="add" >
+	<input type="submit" name="rewrite" value="rewrite" >
+	<input type="submit" name="delete" value="delete" >
+</form> 
+
 
 
 </body>
