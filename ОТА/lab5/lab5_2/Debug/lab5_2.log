@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\projects\university\ota\lab5\lab5_2\source.cpp(78): warning C4715: dfs: значение возвращается не при всех путях выполнения
+  lab5_2.vcxproj -> D:\projects\university\OTA\lab5\lab5_2\Debug\lab5_2.exe
