@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\university\ii курс\iv семестр\ота\lab6\ota_6\source.cpp(187): warning C4244: =: преобразование "float" в "::size_t", возможна потеря данных
+  OTA_6.vcxproj -> D:\university\II курс\IV семестр\ОТА\lab6\OTA_6\Debug\OTA_6.exe
