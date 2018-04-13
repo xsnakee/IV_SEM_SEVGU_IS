@@ -37,6 +37,7 @@ void fillArr(arr &d) {
 		d[i] = std::numeric_limits<size_t>::max();
 	}
 }
+
 size_t dfs(const size_t v, const matrix g, vector<bool> &used, arr &top, size_t &l);
 size_t topSort(const matrix g, vector<bool> &used, arr &top);
 size_t solve(const matrix &g, arr &top, arr &d, const size_t s, const size_t fRoot);
