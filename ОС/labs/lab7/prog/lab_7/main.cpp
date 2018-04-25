@@ -34,6 +34,12 @@ void matrixReset(matr &m) {
 	}
 }
 
+void printArr(vect &a){
+    for (auto &i : a){
+        std::cout << i << " ";
+    }
+}
+
 int minIndex(const vect &a, const taskVect &t) {
 
 	int minIndex = 0;
@@ -119,7 +125,8 @@ vect generateJonsonOrder(const matr &m) {
 	int forwardIter = 0;
 	int backIter = orderedVect.size() - 1;
 
-	//while (!checkAllProcesses(tasks)) {
+
+
 	while (forwardIter <= backIter) {
 		int minI = 0, minJ = 0;
 
@@ -139,6 +146,8 @@ vect generateJonsonOrder(const matr &m) {
 		int minVal = m[minI][minJ];
 
 		for (size_t i = 0; i < m[0].size(); ++i) {
+		    if (tasks[i] == false){
+		         
 			if (m[0][i] == minVal) {
 
 				orderedVect[forwardIter++] = i;
@@ -148,6 +157,8 @@ vect generateJonsonOrder(const matr &m) {
 				orderedVect[backIter--] = i;
 				tasks[i] = true;
 			}
+		    }
+		   
 		}
 
 	}
@@ -197,7 +208,7 @@ int MaxValIndex(const vect &a) {
 }
 
 
-void run(matr &m) {
+vect runExactAlgo(matr &m) {
 	vect temp;
 
 	if (checkAlgorithm(m)) {
@@ -206,9 +217,18 @@ void run(matr &m) {
 		matr T = { A , B};
 
 		temp = generateJonsonOrder(T);
+		
+		return temp;
 	}
-	else {
-		vect colSumVal(m.size(),0);
+	
+	
+	throw "Error";
+}
+
+vect runEvristicAlgo(matr &m){
+    
+    vect temp;
+    	vect colSumVal(m.size(),0);
 		for (size_t i = 0; i < m.size(); ++i) {
 			colSumVal[i] = accumulate(m[i].begin(), m[i].end(),0);
 		}
@@ -233,9 +253,8 @@ void run(matr &m) {
 			break;
 		}
 		}
-	}
+		return temp;
 }
-
 
 int main() {
 	
@@ -245,7 +264,10 @@ int main() {
 
 	matr J = { A, B, C };
 	
-	run(J);
-
+	vect temp1 = runExactAlgo(J);
+	vect temp2 = runEvristicAlgo(J);
+	printArr(temp1);
+	cout << endl;
+	printArr(temp2);
 	return 0;
 }
