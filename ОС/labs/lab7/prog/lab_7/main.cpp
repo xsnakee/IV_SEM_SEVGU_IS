@@ -257,11 +257,14 @@ vect runEvristicAlgo(matr &m){
 }
 
 int main() {
-	
+	/*
+	vect A = { 2, 8, 4, 3, 1 };
+	vect B = { 4, 1, 2, 2, 3 };
+	vect C = { 4, 7, 6, 5, 5 };
+	*/
 	vect A = { 2, 1, 4, 5, 3 };
 	vect B = { 3, 1, 2, 3, 4 };
 	vect C = { 4, 5, 5, 7, 6 };
-
 	matr J = { A, B, C };
 	
 	vect temp1 = runExactAlgo(J);
