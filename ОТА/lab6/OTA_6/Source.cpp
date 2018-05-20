@@ -16,6 +16,20 @@ struct student_t {
 typedef vector<student_t> vec;
 typedef vec::iterator vecIter;
 
+student_t *massivStructur;
+
+
+int n = 1000;//elements amount
+
+
+massivStructur = new student_t[n];
+massivStructur[0] = { "иванов",2,"ИС" };
+massivStructur[1] = d;
+
+
+student_t arrStruct[n];
+if (arrStruct[i].course > arrStruct[i + 1].course) swap(arrStruct[i], arrStruct[i+1]);
+int arr[10];
 
 size_t modBubbleSort(vec &arr) {
 
@@ -173,6 +187,8 @@ int main() {
 	};
 	//*/
 	
+
+
 	vec mainArr(2000);
 
 	randomFill(mainArr);
