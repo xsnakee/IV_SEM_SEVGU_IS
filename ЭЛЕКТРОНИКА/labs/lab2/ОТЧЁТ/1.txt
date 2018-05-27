@@ -1,0 +1,119 @@
+#include <iostream>
+#include <conio.h>
+#include <ctime>
+using namespace std;
+int b[10];
+
+size_t insertSort(int *a, int n) {
+	size_t opCounter = 0;
+	int i, j, k;
+	for (i = 1; (i < n); i++) { // onoaiiaeou i-e yeaiaio ia naia ianoi // 1 + 3 * n
+		opCounter += 3;
+		k = a[i];// caiiiieou i-e yeaiaio a ioeaaie y?aeea // 1 + 1
+		opCounter += 2;
+		for (j = i - 1; a[j] > k; j--) {// iiea j-ue yeaiaio aieuoa oaeouaai //2 + 4 * n
+			opCounter += 4;
+			a[j + 1] = a[j];// naaeaaou aai aeaai //1 + 1 + 1 + 1
+			opCounter += 4;
+		}
+		opCounter += 2;
+		a[j + 1] = k; // ia naiaiaiia ianoi aa?ioou enoiaiue eaiaio //1 + 1 + 1
+		opCounter += 3;
+	}
+	opCounter += 1;
+
+	return opCounter;
+}
+
+int bubbleSort(int *a, int n) {
+	size_t opCounter = 0;
+	int i, j;
+	for (i = n - 1; i > 0; i--) { //2 + 3 * (N-1)
+		opCounter += 3;
+		for (j = 0; j < i; j++) { // выталкивается самый тяжелый // 1 +  3 * i
+			opCounter += 3;
+			if (a[j] > a[j + 1]) { // если он больше своего соседа справа //1 + 1 + 1 + 1
+				swap(a[j], a[j + 1]);//1 + 1 + 1
+				opCounter += 3;
+			}
+			opCounter += 4;
+		}
+
+		opCounter += 1;
+
+	}
+	opCounter += 2;
+
+	return opCounter;
+}
+
+void print(int *arr, int n) {
+	for (int i = 0; i < n; ++i) {
+		cout << arr[i] << " ";
+	}
+}
+
+void merge(int *a, int l, int r,size_t &opCounter) {
+	int m = (l + r) / 2;
+	opCounter += 3;
+	int i, j, k;
+	// b - промежуточный массив, объявленный как глобальнаяпеременная
+	i = l; // начало первой половины
+	j = m + 1; // начало второй половины
+	k = l;
+	while (i <= m || j <= r) { // пока в массив не добавятся все элементы
+		if (i > m) { // если в первой половине чисел больше нет
+			b[k++] = a[j++]; // добавляется число из второйполовины
+			continue;
+		}
+		if (j > r) { // если во второй половине чисел больше нет
+			b[k++] = a[i++]; // добавляется число из первой
+			continue;
+		}
+		if (a[i] < a[j]) // если в первой половине минимальное числоменьше //минимального во второй
+			b[k++] = a[i++]; // добавляем число из первой
+		else // иначе
+			b[k++] = a[j++]; // из второй
+	}
+	for (i = l; i <= r; i++) // возвращение данных из промежуточногомассива //в исходный
+		a[i] = b[i];
+}
+void mergeSort(int *a, int l, int r,size_t &opCounter) {
+	if (l == r) // если один элемент, то он отсортирован
+		return;
+	opCounter += 1;
+	int m = (l + r) / 2; // найти середину
+	opCounter += 3;
+	mergeSort(a, l, m, opCounter); // отсортивать первую половину
+	mergeSort(a, m + 1, r, opCounter); // отсортировать вторую половину
+	opCounter += 1;
+	merge(a, l, r, opCounter); // совместить две половины, не теряя свойства
+					//возрастания
+}
+
+
+
+
+int main() {
+
+	const int n = 10;
+	int arr[n];
+
+	for (int i = 0; i < n; ++i) {
+		arr[i] = rand() % 255;
+	}
+
+	print(arr, n);
+	cout << endl;
+
+	size_t opAmount = 0;
+	//_getch();
+	opAmount = insertSort(arr, n);
+	//opAmount = bubbleSort(arr, n);
+	//mergeSort(arr, 0, n - 1, opAmount);
+	print(arr, n);
+	int time = clock();
+	cout << endl << opAmount << " --- " << time << endl;
+	_getch();
+	return 0;
+}
