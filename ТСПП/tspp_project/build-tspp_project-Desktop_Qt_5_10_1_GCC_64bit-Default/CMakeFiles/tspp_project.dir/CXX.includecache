@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/actor_t.h
+iostream
+-
+
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/main.cpp
+iostream
+-
+actor_t.h
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/actor_t.h
+

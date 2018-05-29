@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="tspp_proj" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tspp_proj">
+         <Option output="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/tspp_proj" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+            <Add directory="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 tspp_proj" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tspp_proj/fast">
+         <Option output="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/tspp_proj" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+            <Add directory="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 tspp_proj/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/actor_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/actor_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/ad_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/ad_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/administrator_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/administrator_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/clientowner_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/clientowner_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/clientviewer_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/clientviewer_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/main.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/manager_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/manager_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/moderator_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/moderator_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/servicedesk_t.cpp">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/servicedesk_t.h">
+         <Option target="tspp_proj"/>
+      </Unit>
+      <Unit filename="/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/tspp_project/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

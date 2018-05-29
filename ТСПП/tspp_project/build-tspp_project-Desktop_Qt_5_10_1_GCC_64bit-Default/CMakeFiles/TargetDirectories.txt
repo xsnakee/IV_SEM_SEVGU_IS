@@ -1,0 +1,7 @@
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/install.dir
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/list_install_components.dir
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/rebuild_cache.dir
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/tspp_proj.dir
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/install/strip.dir
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/install/local.dir
+/media/dragonballs/cmn_NTFS/Projects/QT_projects/tspp_project/build-tspp_project-Desktop_Qt_5_10_1_GCC_64bit-Default/CMakeFiles/edit_cache.dir
